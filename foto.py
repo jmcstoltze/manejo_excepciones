@@ -80,7 +80,7 @@ if __name__ == "__main__":
         
     except DimensionError as e:
         print(e) # Se espera que imprima el error
-
+ 
     # Se intenta modificar un parámetro con valor no permitido
     try:
         f.alto = 4000
