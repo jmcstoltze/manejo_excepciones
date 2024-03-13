@@ -6,7 +6,7 @@ from error import DimensionError
 class Foto():
 
     # Constantes para un valor máximo y mínimo
-    MAX = 250
+    MAX = 2500
     MIN = 1
 
     # Constructor de la clase foto
@@ -69,7 +69,7 @@ if __name__ == "__main__":
     # Se intenta modificar un parámetro con valor no permitido
     try:
         f = Foto(None, None, None) # Instancia cualquiera de la imagen
-        f.ancho = 350
+        f.ancho = 3500
         
     except DimensionError as e:
         print(e) # Se espera que imprima el error
@@ -83,7 +83,7 @@ if __name__ == "__main__":
 
     # Se intenta modificar un parámetro con valor no permitido
     try:
-        f.alto = 400
+        f.alto = 4000
         
     except DimensionError as e:
         print(e) # Se espera que imprima el error
